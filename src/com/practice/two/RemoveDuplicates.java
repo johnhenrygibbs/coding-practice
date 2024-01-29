@@ -6,10 +6,10 @@ import java.util.HashSet;
 
 public class RemoveDuplicates {
 
-    void deleteDupes(Node n) {
+    void deleteDupes(LinkedListNode n) {
 
         HashSet<Integer> set = new HashSet<Integer>();
-        Node previous = null;
+        LinkedListNode previous = null;
 
         while (n != null) {
 
