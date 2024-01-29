@@ -4,7 +4,7 @@ package com.practice.two;
 
 public class DeleteMiddleNode {
 
-    boolean deleteNode(LinkedListNode n) {
+    boolean deleteNode(MyNode n) {
 
         if (n == null || n.next == null) {
 
@@ -14,7 +14,7 @@ public class DeleteMiddleNode {
 
         // One solution is to copy the data from the next node and then delete the next node.
 
-        LinkedListNode next = n.next;
+        MyNode next = n.next;
         n.data = next.data;
         n.next = next.next;
         return true;

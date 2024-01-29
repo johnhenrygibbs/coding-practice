@@ -6,10 +6,10 @@ public class ReturnKthToLast {
 
     // One possible iterative solution places two pointers k nodes apart using the "runner" technique.
 
-    LinkedListNode nthToLast(LinkedListNode head, int k) {
+    MyNode nthToLast(MyNode head, int k) {
 
-        LinkedListNode p1 = head;
-        LinkedListNode p2 = head;
+        MyNode p1 = head;
+        MyNode p2 = head;
 
         // Move p1 k nodes into the list.
 
