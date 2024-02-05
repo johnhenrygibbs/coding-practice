@@ -5,6 +5,8 @@ public class MyNode {
     int data;
     MyNode next = null;
 
+    public MyNode() {}
+
     public MyNode(int data) {
 
         this.data = data;
