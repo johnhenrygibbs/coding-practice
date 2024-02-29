@@ -2,15 +2,21 @@ package com.practice.four;
 
 public class TreeNode {
 
-    public String name;
+    public int value;
     public TreeNode left;
     public TreeNode right;
 
-    public TreeNode(String name, TreeNode left, TreeNode right) {
+    public TreeNode(int value, TreeNode left, TreeNode right) {
 
-        this.name = name;
+        this.value = value;
         this.left = left;
         this.right = right;
+
+    }
+
+    public TreeNode(int value) {
+
+        this.value = value;
 
     }
 
