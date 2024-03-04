@@ -26,15 +26,19 @@ public class BinarySearchTree {
 
     }
 
-    public int getMinValue() {
+    public int getMinValue(Node node) {
 
-        return 1;
+        Node current = node;
+        while (current.left != null) current = current.left;
+        return current.key;
 
     }
 
-    public int getMaxValue() {
+    public int getMaxValue(Node node) {
 
-        return 1;
+        Node current = node;
+        while (current.right != null) current = current.right;
+        return current.key;
 
     }
 
@@ -52,19 +56,19 @@ public class BinarySearchTree {
 
     public Node delete(int key) {
 
-        return root;
+        return delete(root, key);
 
     }
 
     public int findCeil(int input) {
 
-        return 1;
+        return findCeil(root, input);
 
     }
 
     public int findFloor(int input) {
 
-        return 1;
+        return findFloor(root, input);
 
     }
 
@@ -126,20 +130,74 @@ public class BinarySearchTree {
         } else {
 
             // Node is a leaf (first case).
-            if (node.left == null && node.right == null) {
-
-                return null;
-
-            }
+            if (node.left == null && node.right == null) return null;
 
             // Node has 1 subtree (second case).
             if (node.left == null) return node.right;
             else if (node.right == null) return node.left;
 
             // Node has both subtrees (third case).
-
+            int replaceKey = getMinValue(node.right);
+            node.key = replaceKey;
+            node.right = delete(node.right, key);
 
         }
+
+        return node;
+
+    }
+
+    private int findCeil(Node node, int input) {
+
+        if (node == null) return -1;
+        if (node.key == input) return node.key;
+        if (node.key < input) return findCeil(node.right, input);
+
+        int ceil = findCeil(node.left, input);
+        if (ceil >= input) return ceil;
+        else return node.key;
+
+    }
+
+    private int findFloor(Node node, int input) {
+
+        if (node == null) return -1;
+        if (node.key == input) return node.key;
+        if (node.key < input) return findFloor(node.left, input);
+
+        int floor = findFloor(node.right, input);
+        if (floor >= node.key) return floor;
+        else return node.key;
+
+    }
+
+    // Traversal methods.
+
+    private void printPostOrder(Node node) {
+
+        if (node == null) return;
+        printPostOrder(node.left);
+        printPostOrder(node.right);
+        System.out.print(node.key + " ");
+
+    }
+
+    private void printPreOrder(Node node) {
+
+        if (node == null) return;
+        System.out.print(node.key + " ");
+        printPreOrder(node.left);
+        printPreOrder(node.right);
+
+    }
+
+    private void printInOrder(Node node) {
+
+        if (node == null) return;
+        printInOrder(node.left);
+        System.out.print(node.key + " ");
+        printInOrder(node.right);
+
 
     }
 
