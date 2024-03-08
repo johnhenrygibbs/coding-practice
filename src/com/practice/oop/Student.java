@@ -1,4 +1,4 @@
-package com.practice.four;
+package com.practice.oop;
 
 // OOP 1 | Introduction & Concepts - Classes, Objects, Constructors, Keywords
 
