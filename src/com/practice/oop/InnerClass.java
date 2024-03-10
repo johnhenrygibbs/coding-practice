@@ -11,6 +11,14 @@ class Test {
     public Test(String name) {
         this.name = name;
     }
+
+    // Providing toString() method in this class will override the default toString() method in Java, called via println(), which returns the class name and hash value.
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
 }
 
 public class InnerClass {
@@ -19,6 +27,9 @@ public class InnerClass {
 
         Test a = new Test("John");
         Test b = new Test("Matt");
+
+        System.out.println(a);
+        System.out.println(b);
 
     }
 
