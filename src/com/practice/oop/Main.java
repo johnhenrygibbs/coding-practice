@@ -6,6 +6,16 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Box box1 = new Box(4.6, 7.9, 9.9);
+        Box box2 = new Box(box1);
+
+        System.out.println(box1.length + " " + box1.width + " " + box1.height);
+        System.out.println(box2.length + " " + box2.width + " " + box2.height);
+
+        WeightedBox box3 = new WeightedBox();
+        WeightedBox box4 = new WeightedBox(1, 2, 3, 4);
+        System.out.println(box3.length + " " + box3.width + " " + box3.height + " " + box3.weight);
+
         // These three reference variables will point to the same instance object.
 
         Singleton object1 = Singleton.getInstance();
