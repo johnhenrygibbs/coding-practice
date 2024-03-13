@@ -16,6 +16,15 @@ public class Main {
         WeightedBox box4 = new WeightedBox(1, 2, 3, 4);
         System.out.println(box3.length + " " + box3.width + " " + box3.height + " " + box3.weight);
 
+        // The type of the reference variable and not the type of the object determines what members can be accessed.
+
+        // So in the example below, you can access length, width, and height, but not weight.
+
+        Box box5 = new WeightedBox(1, 2, 3, 4);
+        System.out.println(box5.length);
+        System.out.println(box5.width);
+        System.out.println(box5.height);
+
         // These three reference variables will point to the same instance object.
 
         Singleton object1 = Singleton.getInstance();
