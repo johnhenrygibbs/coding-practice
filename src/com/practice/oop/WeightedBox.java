@@ -10,6 +10,13 @@ public class WeightedBox extends Box {
 
     }
 
+    WeightedBox(double side, double weight) {
+
+        super(side);
+        this.weight = weight;
+
+    }
+
     // Exactly like the "box5" example in Main.
 
     public WeightedBox(WeightedBox other) {
@@ -25,4 +32,5 @@ public class WeightedBox extends Box {
         this.weight = weight;
 
     }
+
 }

@@ -15,4 +15,5 @@ public class Human {
         this.married = married;
         Human.population += 1;
     }
+
 }

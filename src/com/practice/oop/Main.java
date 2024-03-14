@@ -25,6 +25,10 @@ public class Main {
         System.out.println(box5.width);
         System.out.println(box5.height);
 
+        // Single inheritance using three levels (BoxPrice, WeightedBox, Box).
+
+        BoxPrice box = new BoxPrice(5, 8, 200);
+
         // These three reference variables will point to the same instance object.
 
         Singleton object1 = Singleton.getInstance();
