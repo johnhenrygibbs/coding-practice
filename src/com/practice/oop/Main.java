@@ -29,6 +29,8 @@ public class Main {
 
         BoxPrice box = new BoxPrice(5, 8, 200);
 
+        // Multiple inheritance is not allowed in Java! Instead, it relies on interfaces.
+
         // These three reference variables will point to the same instance object.
 
         Singleton object1 = Singleton.getInstance();
