@@ -31,6 +31,8 @@ public class Main {
 
         // Multiple inheritance is not allowed in Java! Instead, it relies on interfaces.
 
+        // Hierarchical inheritance follows the same behavior as single inheritance; when more than one class is extended from a parent class.
+
         // These three reference variables will point to the same instance object.
 
         Singleton object1 = Singleton.getInstance();
