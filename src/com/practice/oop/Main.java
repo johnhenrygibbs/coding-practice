@@ -29,7 +29,7 @@ public class Main {
 
         BoxPrice box = new BoxPrice(5, 8, 200);
 
-        // Multiple inheritance is not allowed in Java! Instead, it relies on interfaces.
+        // Multiple and hybrid inheritance is not allowed in Java! Instead, it relies on interfaces.
 
         // Hierarchical inheritance follows the same behavior as single inheritance; when more than one class is extended from a parent class.
 
