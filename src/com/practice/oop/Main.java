@@ -53,6 +53,8 @@ public class Main {
         one.greetMe();
         message();
 
+        box1.greetMe();
+
     }
 
 }
