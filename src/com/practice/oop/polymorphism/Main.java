@@ -6,7 +6,7 @@ package com.practice.oop.polymorphism;
 
 // 1. Compile time or static polymorphism (achieved via method overloading).
 
-// 2.
+// 2. Runtime or dynamic polymorphism (achieved via method overriding).
 
 public class Main {
 
