@@ -22,6 +22,16 @@ public class Main {
         circle.area();
         square.area();
 
+        // Parent obj = new Child();
+
+        // Here, the method called will depend on Child(). This is known as upcasting.
+
+        // Big picture, this is how overriding works.
+
+        // Java determines this by dynamic method dispatch, a call to an overridden method resolved at runtime rather than compile time.
+
+        Shape upcast = new Circle();
+
     }
 
 }
