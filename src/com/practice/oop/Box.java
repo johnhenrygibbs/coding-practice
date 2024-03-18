@@ -6,6 +6,10 @@ public class Box {
     double width;
     double height;
 
+    // You cannot override static methods in child classes, even though they can be inherited.
+
+    // Overriding depends on objects. Static does not depend on objects. Hence, static methods cannot be overridden.
+
     static void greetMe() {
 
         System.out.println("Printing from the Box class.");
