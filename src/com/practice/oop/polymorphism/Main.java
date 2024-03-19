@@ -8,6 +8,12 @@ package com.practice.oop.polymorphism;
 
 // 2. Runtime or dynamic polymorphism (achieved via method overriding).
 
+// 3. Encapsulation (a.k.a. wrapping the implementation of the data members and methods in a class).
+
+// 4. Abstraction, on the other hand, means hiding the unnecessary details and showing valuable information only.
+
+// Abstraction solves design-level issues, while encapsulation is solving implementation-level issues.
+
 public class Main {
 
     // In this example, we have more than one area() method in the package.
