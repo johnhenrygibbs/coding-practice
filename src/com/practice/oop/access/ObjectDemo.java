@@ -45,6 +45,11 @@ public class ObjectDemo {
 
         }
 
+        // The getClass() method is stored in heap memory.
+
+        System.out.println(obj1.getClass());
+        System.out.println(obj2.getClass());
+
         System.out.println(obj1.hashCode());
         System.out.println(obj2.hashCode());
 
