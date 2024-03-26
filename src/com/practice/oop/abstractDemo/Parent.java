@@ -5,10 +5,12 @@ package com.practice.oop.abstractDemo;
 public abstract class Parent {
 
     int age;
+    final int VALUE;
 
     public Parent(int age) {
 
         this.age = age;
+        VALUE = 12345;
 
     }
 
