@@ -6,11 +6,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Car car = new Car();
+        Engine car = new Car();
 
         car.turnOn();
         car.accelerate();
         car.decelerate();
+
+        Media carMedia = new Car();
+
+        carMedia.stop();
+
+        NewCar newCar = new NewCar();
+
+        newCar.turnOn();
+        newCar.start();
+        newCar.upgradeEngine();
+        newCar.turnOn();
 
     }
 
