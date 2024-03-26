@@ -16,4 +16,11 @@ public class Main implements B {
 
     }
 
+    public static void main(String[] args) {
+
+        Main obj = new Main();
+        A.greeting();
+
+    }
+
 }
