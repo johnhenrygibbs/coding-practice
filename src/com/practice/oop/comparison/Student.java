@@ -11,6 +11,11 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
+    public String toString() {
+        return grade + " " + num;
+    }
+
+    @Override
     public int compareTo(Student o) {
 
         // If diff is equal to 0 it means both are equal.
