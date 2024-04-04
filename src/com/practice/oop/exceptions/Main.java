@@ -9,11 +9,23 @@ public class Main {
 
         try {
 
-            divide(a, b);
+            // divide(a, b);
+
+            String name = "John";
+
+            if (name.equals("John")) {
+
+                throw new MyException("Name is John.");
+
+            }
 
             throw new Exception ("Just for fun.");
 
         // Add stricter exception catches first. In this case, subclasses before classes.
+
+        } catch (MyException e) {
+
+            System.out.println(e.getMessage());
 
         } catch (ArithmeticException e) {
 
