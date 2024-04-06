@@ -1,9 +1,6 @@
 package com.practice.oop.collections;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
@@ -18,6 +15,14 @@ public class Main {
         list2.add(89);
 
         System.out.println(list2);
+
+        List<Integer> vector = new Vector<>();
+        vector.add(45);
+        vector.add(5);
+        vector.add(15);
+        vector.add(56);
+
+        System.out.println(vector);
 
     }
 
