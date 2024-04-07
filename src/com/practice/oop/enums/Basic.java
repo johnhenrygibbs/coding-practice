@@ -6,13 +6,18 @@ public class Basic {
 
     // Since they are final, you can't create child enums.
 
-    enum Week {
+    enum Week implements A {
         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday;
 
         Week() {
 
             System.out.println("Constructor called for " + this);
 
+        }
+
+        @Override
+        public void hello() {
+            System.out.println("Hey, how are you?");
         }
 
         // This is not public or protected, only private or default.
@@ -27,8 +32,12 @@ public class Basic {
 
         Week week;
         week = Week.Monday;
+        week.hello();
+        System.out.println(Week.valueOf("Monday"));
 
         for (Week day : week.values()) {
+
+            // Ordinal here refers to index.
 
             System.out.println(week.ordinal());
 
