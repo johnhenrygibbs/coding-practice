@@ -12,10 +12,10 @@ public class Main {
         // Strings are immutable for security reasons.
 
         String myName = "John";
-        System.out.println(a);
+        System.out.println(myName);
 
         myName = "Cassie";
-        System.out.println(a);
+        System.out.println(myName);
 
         // In this example, myName has not been changed, but rather another object ("Cassie") has been made in the heap.
 
