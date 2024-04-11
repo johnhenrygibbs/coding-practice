@@ -11,6 +11,13 @@ public class Comparison {
 
         // == checks if reference variables are pointing to the same object.
 
+        // The two lines below creates values in heap outside the string pool.
+
+        String name1 = new String("John");
+        String name2 = new String("John");
+
+        System.out.println(name1 == name2);
+
     }
 
 }
