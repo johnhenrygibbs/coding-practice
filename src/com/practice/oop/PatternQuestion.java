@@ -9,10 +9,46 @@ public class PatternQuestion {
     public static void main(String[] args) {
 
         patternOne(4);
+        System.out.println();
+        patternTwo(4);
 
     }
 
+    /*
+
+    ****
+    ****
+    ****
+    ****
+
+     */
+
     static void patternOne(int n) {
+
+        for (int row = 1; row <= n; row++) {
+
+            for (int col = 1; col <= n; col++) {
+
+                System.out.print("*");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+    /*
+
+     *
+     **
+     ***
+     ****
+
+     */
+
+    static void patternTwo(int n) {
 
         // Step 1: How many rows you have is how many times the outer loop will run.
 
