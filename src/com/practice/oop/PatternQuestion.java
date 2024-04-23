@@ -13,6 +13,8 @@ public class PatternQuestion {
         patternTwo(4);
         System.out.println();
         patternThree(4);
+        System.out.println();
+        patternFour(4);
 
     }
 
@@ -90,6 +92,31 @@ public class PatternQuestion {
             for (int col = 1; col <= n - row + 1; col++) {
 
                 System.out.print("*");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+    /*
+
+     1
+     12
+     123
+     1234
+
+     */
+
+    static void patternFour(int n) {
+
+        for (int row = 1; row <= n; row++) {
+
+            for (int col = 1; col <= row; col++) {
+
+                System.out.print(col);
 
             }
 
