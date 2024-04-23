@@ -11,6 +11,8 @@ public class PatternQuestion {
         patternOne(4);
         System.out.println();
         patternTwo(4);
+        System.out.println();
+        patternThree(4);
 
     }
 
@@ -65,6 +67,31 @@ public class PatternQuestion {
             }
 
             // When one row is printed, we need to add a newline.
+
+            System.out.println();
+
+        }
+
+    }
+
+    /*
+
+     ****
+     ***
+     **
+     *
+
+     */
+
+    static void patternThree(int n) {
+
+        for (int row = 1; row <= n; row++) {
+
+            for (int col = 1; col <= n - row + 1; col++) {
+
+                System.out.print("*");
+
+            }
 
             System.out.println();
 
