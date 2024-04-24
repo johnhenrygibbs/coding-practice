@@ -15,6 +15,8 @@ public class PatternQuestion {
         patternThree(4);
         System.out.println();
         patternFour(4);
+        System.out.println();
+        patternFive(4);
 
     }
 
@@ -117,6 +119,44 @@ public class PatternQuestion {
             for (int col = 1; col <= row; col++) {
 
                 System.out.print(col);
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+    /*
+
+     *
+     **
+     ***
+     ****
+     ***
+     **
+     *
+
+     */
+
+    static void patternFive(int n) {
+
+        // Once the row number is greater than n, the output will be different.
+
+        // Otherwise, the column number is going to be equal to row only.
+
+        // When it exceeds n, we need to figure out the condition to print the reverse.
+
+        // It's actually subtracting the present row from the pattern's total number of rows.
+
+        for (int row = 0; row < 2 * n; row++) {
+
+            int totalColumnsInRow = row > n ? 2 * n - row : row;
+
+            for (int col = 0; col < totalColumnsInRow; col++) {
+
+                System.out.print("*");
 
             }
 
