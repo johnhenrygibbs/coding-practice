@@ -19,6 +19,8 @@ public class PatternQuestion {
         patternFive(4);
         System.out.println();
         patternSix(5);
+        System.out.println();
+        patternSeven(5);
 
     }
 
@@ -169,6 +171,7 @@ public class PatternQuestion {
     }
 
     /*
+
          *
         * *
        * * *
@@ -198,6 +201,44 @@ public class PatternQuestion {
             for (int col = 0; col < totalColumnsInRow; col++) {
 
                 System.out.print("* ");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+    /*
+
+            1
+          2 1 2
+        3 2 1 2 3
+      4 3 2 1 2 3 4
+    5 4 3 2 1 2 3 4 5
+
+     */
+
+    static void patternSeven(int n) {
+
+        for (int row = 1; row <= n; row++) {
+
+            for (int spaces = 0; spaces < n - row; spaces++) {
+
+                System.out.print("  ");
+
+            }
+
+            for (int col = row; col >= 1; col--) {
+
+                System.out.print(col + " ");
+
+            }
+
+            for (int col = 2; col <= row; col++) {
+
+                System.out.print(col + " ");
 
             }
 
