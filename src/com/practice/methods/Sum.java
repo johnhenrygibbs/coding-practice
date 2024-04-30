@@ -6,7 +6,22 @@ public class Sum {
 
     public static void main(String[] args) {
 
-        sum();
+        int answer = sumTwo();
+        System.out.println(answer);
+
+    }
+
+    // Return the value instead.
+
+    static int sumTwo() {
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter No. 1: ");
+        int numOne = in.nextInt();
+        System.out.print("Enter No. 2: ");
+        int numTwo = in.nextInt();
+        int sum = numOne + numTwo;
+        return sum;
 
     }
 
