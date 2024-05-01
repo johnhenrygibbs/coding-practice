@@ -9,6 +9,18 @@ public class Sum {
         int answer = sumTwo();
         System.out.println(answer);
 
+        int result = sumThree(20, 30);
+        System.out.println(result);
+
+    }
+
+    // Pass the value of numbers when you are calling the method in Main class. We do that via parameters.
+
+    static int sumThree(int a, int b) {
+
+        int sum = a + b;
+        return sum;
+
     }
 
     // Return the value instead.
